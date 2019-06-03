@@ -23,8 +23,7 @@ class ViewController: UIViewController {
         let realm = RealmService.shared.realm
         dataObject = realm.objects(Sections.self)
         
-        
-        // 
+        // tableView
         tableView.frame = view.frame
         tableView.dataSource = self
         tableView.delegate = self
